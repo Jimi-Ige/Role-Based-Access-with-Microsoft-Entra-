@@ -9,19 +9,19 @@ Enhances security by enforcing the principle of least privilege, ensuring approp
 ✅ Knowledge of RBAC and IAM principles
 ✅ Administrator or equivalent permissions for RBAC configuration
 
-**Steps with Explanations:**
-1. Configure Azure Subscription Access Control
-* Navigate to Azure Active Directory and identify your subscription.
-* Review the Access Control (IAM) settings and understand the roles and permissions available.
-2. Assign a Built-In Role
-* Select the Access Control (IAM) option on your subscription.
-* Assign a built-in role (e.g., Reader or Contributor) to a specific user or group within the subscription.
-3. Create and Assign a Custom Role
-* Define a custom role by selecting Roles under Access Control.
-* Configure the permissions specific to the custom role and assign it to a user or group.
-4. Manage Role Assignments at Resource Scope
-* Navigate to a specific resource group or resource within your subscription.
-* Use the Access Control (IAM) to assign roles at a more granular level, like a resource group or specific resource.
-5. Verify Access Permissions
-* Use Azure’s Check Access feature to confirm that users or groups have the correct access permissions based on their role assignments.
-* Test role effectiveness by logging in as the assigned user or group to ensure proper permissions are granted.
+**High-Level Steps with Explanations:**
+
+ **1. Configured Azure Subscription Access Control:** I navigated to Azure Active Directory to identify my subscription. I then reviewed the Access Control (IAM) settings to understand the available roles and permissions.
+Establishing clear access control at the subscription level ensures that only authorized personnel can manage high-level resources, reducing security risks and preventing unauthorized access. This centralizes management, simplifies audits, and maintains consistent security standards.
+
+ **2. Assigned a Built-In Role:** I selected the Access Control (IAM) option in my subscription. Then, I assigned a built-in role (e.g., Virtual Machine Contributor) to a specific group (e.g., Help Desk) within my subscription.
+Assigning built-in roles allows you to leverage predefined access controls that align with standard job functions. Using these standardized roles streamlines role management reduces configuration time, and ensures that users have appropriate permissions to perform their tasks without excessive access.
+
+ **3. Created and Assigned a Custom Role:** I defined a custom role (Custom Support Request) by selecting Roles under Access Control and configured the permissions.
+Custom roles allow you to tailor permissions to fit business needs, providing fine-grained control over who can perform what actions. This minimizes the risk of privilege abuse and enforces least-privilege access, aligning user capabilities with organizational security policies.
+
+ **4. Verified Access Permissions:** Finally, I use Azure’s Check Access feature to confirm that the Help Desk group has the correct access permissions based on role assignments.
+Regularly verifying access permissions ensures that access rights are up-to-date and align with organizational policies. This proactive approach prevents privilege creep, supports compliance, and maintains a secure environment by quickly identifying and addressing access discrepancies.
+
+**Reference Link(s):**
+* https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02a_Manage_Subscriptions_and_RBAC_Entra.html
