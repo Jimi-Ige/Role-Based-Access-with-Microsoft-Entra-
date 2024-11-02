@@ -25,5 +25,3 @@ Enhances security by enforcing the principle of least privilege, ensuring approp
 5. Verify Access Permissions
 * Use Azure’s Check Access feature to confirm that users or groups have the correct access permissions based on their role assignments.
 * Test role effectiveness by logging in as the assigned user or group to ensure proper permissions are granted.
-
-**Challenges or Insights:**
